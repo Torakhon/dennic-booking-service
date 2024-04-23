@@ -1,0 +1,25 @@
+2024-04-23T14:36:31.965+0500	INFO	app/app.go:109	gRPC Server Listening	{"url": ":9000"}
+2024-04-23T14:37:11.436+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-04-23T14:36:33+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.BookingService", "grpc.method": "UpdateDoctorAvailability", "peer.address": "127.0.0.1:37492", "error": "ERROR: column \"doctor_availability_id\" does not exist (SQLSTATE 42703)", "grpc.code": "Unknown", "grpc.time_ms": 37485.83}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/server_interceptors.go:39
+github.com/grpc-ecosystem/go-grpc-middleware.ChainUnaryServer.func2.1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/tags/interceptors.go:23
+github.com/grpc-ecosystem/go-grpc-middleware.ChainUnaryServer.func2
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:53
+booking_service/internal/delivery/grpc/server.UnaryInterceptor.func1.1.1
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:16
+booking_service/internal/delivery/grpc/server.UnaryInterceptor.func1
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:23
+booking_service/genproto/booking_service._BookingService_UpdateDoctorAvailability_Handler
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/genproto/booking_service/booking_service.pb.go:3193
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1019
+2024-04-23T14:37:11.441+0500	INFO	app/main.go:36	Conten service stops !
