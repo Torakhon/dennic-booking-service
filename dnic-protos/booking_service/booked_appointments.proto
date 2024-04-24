@@ -1,0 +1,77 @@
+syntax = "proto3";
+
+package booking_service;
+
+service BookedAppointmentsService {
+  // Booked_appointments
+  rpc CreateAppointment(CreateAppointmentReq) returns (Appointment);
+  rpc GetAppointment(FieldValueReq) returns (Appointment);
+  rpc GetAllAppointment(GetAllReq) returns (AppointmentsType);
+  rpc UpdateAppointment(UpdateAppointmentReq) returns (Appointment);
+  rpc DeleteAppointment(FieldValueReq) returns (StatusRes);
+}
+
+//
+
+message Appointment {
+  int64 Id = 1;
+  string DepartmentId = 2;
+  string DoctorId = 3;
+  string PatientId = 4;
+  string AppointmentDate = 5;
+  string AppointmentTime = 6;
+  int64 Duration = 7;
+  string Key = 8;
+  string ExpiresAt = 9;
+  bool PatientStatus = 10;
+  string CreatedAt = 11;
+  string UpdatedAt = 12;
+  string DeletedAt = 13;
+}
+
+message AppointmentsType {
+  int64 Count = 1;
+  repeated Appointment Appointments = 2;
+}
+
+message CreateAppointmentReq {
+  string DepartmentId = 2;
+  string DoctorId = 3;
+  string PatientId = 4;
+  string AppointmentDate = 5;
+  string AppointmentTime = 6;
+  int64 Duration = 7;
+  string Key = 8;
+  string ExpiresAt = 9;
+  bool PatientStatus = 10;
+}
+
+message UpdateAppointmentReq {
+  string AppointmentDate = 2;
+  string AppointmentTime = 3;
+  int64 Duration = 4;
+  string Key = 5;
+  string ExpiresAt = 6;
+  bool PatientStatus = 7;
+  string Field = 8;
+  string Value = 9;
+}
+
+message FieldValueReq {
+  string Field = 1;
+  string Value = 2;
+  bool DeleteStatus = 3;
+}
+
+message StatusRes {
+  bool Status = 1;
+}
+
+message GetAllReq {
+  string Field = 1;
+  string Value = 2;
+  bool DeleteStatus = 3;
+  uint64 Page = 4;
+  uint64 Limit = 5;
+  string OrderBy = 6;
+}

@@ -1,0 +1,222 @@
+2024-04-24T01:39:34.679+0500	INFO	app/main.go:36	Conten service stops !
+2024-04-24T01:39:35.957+0500	INFO	app/app.go:118	gRPC Server Listening	{"url": ":9000"}
+2024-04-24T01:40:00.534+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-04-24T01:40:00+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.BookedAppointmentsService", "grpc.method": "GetAppointment", "peer.address": "127.0.0.1:44740", "grpc.code": "OK", "grpc.time_ms": 2.415}
+2024-04-24T01:40:14.763+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-04-24T01:40:14+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.ArchiveService", "grpc.method": "GetArchive", "peer.address": "127.0.0.1:49784", "error": "no rows in result set", "grpc.code": "Unknown", "grpc.time_ms": 1.305}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/server_interceptors.go:39
+booking_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/tags/interceptors.go:23
+booking_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:53
+booking_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:16
+booking_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:23
+booking_service/genproto/booking_service._ArchiveService_GetArchive_Handler
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/genproto/booking_service/booking_service.pb.go:3194
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1019
+2024-04-24T01:40:36.765+0500	INFO	app/main.go:36	Conten service stops !
+2024-04-24T09:26:05.058+0500	INFO	app/app.go:118	gRPC Server Listening	{"url": ":9000"}
+2024-04-24T09:27:11.935+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-04-24T09:27:11+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.PatientsService", "grpc.method": "CreatePatient", "peer.address": "127.0.0.1:37692", "grpc.code": "OK", "grpc.time_ms": 13.739}
+2024-04-24T09:28:09.448+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-04-24T09:28:09+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.BookedAppointmentsService", "grpc.method": "CreateAppointment", "peer.address": "127.0.0.1:43592", "grpc.code": "OK", "grpc.time_ms": 6.485}
+2024-04-24T09:28:48.695+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-04-24T09:28:48+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.DoctorNotesService", "grpc.method": "CreateDoctorNote", "peer.address": "127.0.0.1:48136", "error": "ERROR: insert or update on table \"doctor_notes\" violates foreign key constraint \"doctor_notes_appointment_id_foreign\" (SQLSTATE 23503)", "grpc.code": "Unknown", "grpc.time_ms": 9.629}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/server_interceptors.go:39
+booking_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/tags/interceptors.go:23
+booking_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:53
+booking_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:16
+booking_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:23
+booking_service/genproto/booking_service._DoctorNotesService_CreateDoctorNote_Handler
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/genproto/booking_service/booking_service.pb.go:2958
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1019
+2024-04-24T09:29:09.697+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-04-24T09:29:09+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.DoctorNotesService", "grpc.method": "CreateDoctorNote", "peer.address": "127.0.0.1:60516", "error": "ERROR: insert or update on table \"doctor_notes\" violates foreign key constraint \"doctor_notes_appointment_id_foreign\" (SQLSTATE 23503)", "grpc.code": "Unknown", "grpc.time_ms": 1.173}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/server_interceptors.go:39
+booking_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/tags/interceptors.go:23
+booking_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:53
+booking_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:16
+booking_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:23
+booking_service/genproto/booking_service._DoctorNotesService_CreateDoctorNote_Handler
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/genproto/booking_service/booking_service.pb.go:2958
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1019
+2024-04-24T09:32:08.381+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-04-24T09:32:08+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.DoctorAvailabilityService", "grpc.method": "CreateDoctorAvailability", "peer.address": "127.0.0.1:46324", "error": "Date.ParseISO: cannot parse \"1111-11:22\": incorrect syntax", "grpc.code": "Unknown", "grpc.time_ms": 0.033}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/server_interceptors.go:39
+booking_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/tags/interceptors.go:23
+booking_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:53
+booking_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:16
+booking_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:23
+booking_service/genproto/booking_service._DoctorAvailabilityService_CreateDoctorAvailability_Handler
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/genproto/booking_service/booking_service.pb.go:3394
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1019
+2024-04-24T09:32:15.709+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-04-24T09:32:15+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.DoctorAvailabilityService", "grpc.method": "CreateDoctorAvailability", "peer.address": "127.0.0.1:33794", "error": "ERROR: new row for relation \"doctor_availability\" violates check constraint \"doctor_availability_status_check\" (SQLSTATE 23514)", "grpc.code": "Unknown", "grpc.time_ms": 4.649}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/server_interceptors.go:39
+booking_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/tags/interceptors.go:23
+booking_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:53
+booking_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:16
+booking_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:23
+booking_service/genproto/booking_service._DoctorAvailabilityService_CreateDoctorAvailability_Handler
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/genproto/booking_service/booking_service.pb.go:3394
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1019
+2024-04-24T09:36:19.517+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-04-24T09:36:19+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.DoctorAvailabilityService", "grpc.method": "CreateDoctorAvailability", "peer.address": "127.0.0.1:42020", "error": "ERROR: new row for relation \"doctor_availability\" violates check constraint \"doctor_availability_status_check\" (SQLSTATE 23514)", "grpc.code": "Unknown", "grpc.time_ms": 0.736}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/server_interceptors.go:39
+booking_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/tags/interceptors.go:23
+booking_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:53
+booking_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:16
+booking_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:23
+booking_service/genproto/booking_service._DoctorAvailabilityService_CreateDoctorAvailability_Handler
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/genproto/booking_service/booking_service.pb.go:3394
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1019
+2024-04-24T09:36:20.265+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-04-24T09:36:20+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.DoctorAvailabilityService", "grpc.method": "CreateDoctorAvailability", "peer.address": "127.0.0.1:42022", "error": "ERROR: new row for relation \"doctor_availability\" violates check constraint \"doctor_availability_status_check\" (SQLSTATE 23514)", "grpc.code": "Unknown", "grpc.time_ms": 0.921}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/server_interceptors.go:39
+booking_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/tags/interceptors.go:23
+booking_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:53
+booking_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:16
+booking_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:23
+booking_service/genproto/booking_service._DoctorAvailabilityService_CreateDoctorAvailability_Handler
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/genproto/booking_service/booking_service.pb.go:3394
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1019
+2024-04-24T09:37:29.207+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-04-24T09:37:29+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.DoctorAvailabilityService", "grpc.method": "CreateDoctorAvailability", "peer.address": "127.0.0.1:36738", "grpc.code": "OK", "grpc.time_ms": 4.601}
+2024-04-24T09:38:22.317+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-04-24T09:38:22+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.ArchiveService", "grpc.method": "CreateArchive", "peer.address": "127.0.0.1:34022", "grpc.code": "OK", "grpc.time_ms": 5.237}
+2024-04-24T09:39:14.401+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-04-24T09:39:14+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.DoctorNotesService", "grpc.method": "CreateDoctorNote", "peer.address": "127.0.0.1:43130", "grpc.code": "OK", "grpc.time_ms": 5.044}
+2024-04-24T09:40:04.557+0500	INFO	app/main.go:36	Conten service stops !
+2024-04-24T09:58:44.494+0500	INFO	app/app.go:118	gRPC Server Listening	{"url": ":9000"}
+2024-04-24T09:58:47.502+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-04-24T09:58:47+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.PatientsService", "grpc.method": "DeletePatient", "peer.address": "127.0.0.1:53044", "grpc.code": "OK", "grpc.time_ms": 6.952}
+2024-04-24T09:58:57.742+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-04-24T09:58:57+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.PatientsService", "grpc.method": "GetPatient", "peer.address": "127.0.0.1:40958", "error": "no rows in result set", "grpc.code": "Unknown", "grpc.time_ms": 1.14}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/server_interceptors.go:39
+booking_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/tags/interceptors.go:23
+booking_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:53
+booking_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:16
+booking_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:23
+booking_service/genproto/booking_service._PatientsService_GetPatient_Handler
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/genproto/booking_service/booking_service.pb.go:2736
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1019
+2024-04-24T09:59:01.517+0500	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2024-04-24T09:59:01+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.PatientsService", "grpc.method": "GetPatient", "peer.address": "127.0.0.1:40506", "grpc.code": "OK", "grpc.time_ms": 4.07}
+2024-04-24T09:59:07.717+0500	ERROR	zap/options.go:212	finished unary call with code Unknown	{"grpc.start_time": "2024-04-24T09:59:07+05:00", "system": "grpc", "span.kind": "server", "grpc.service": "booking_service.PatientsService", "grpc.method": "DeletePatient", "peer.address": "127.0.0.1:40508", "error": "ERROR: update or delete on table \"patients\" violates foreign key constraint \"doctor_notes_patient_id_foreign\" on table \"doctor_notes\" (SQLSTATE 23503)", "grpc.code": "Unknown", "grpc.time_ms": 1.568}
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.DefaultMessageProducer
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/options.go:212
+github.com/grpc-ecosystem/go-grpc-middleware/logging/zap.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/logging/zap/server_interceptors.go:39
+booking_service/internal/app.NewApp.ChainUnaryServer.func5.1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:48
+github.com/grpc-ecosystem/go-grpc-middleware/tags.UnaryServerInterceptor.func1
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/tags/interceptors.go:23
+booking_service/internal/app.NewApp.ChainUnaryServer.func5
+	/home/ali/go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.4.0/chain.go:53
+booking_service/internal/app.NewApp.UnaryInterceptor.func7.1.1
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:16
+booking_service/internal/app.NewApp.UnaryInterceptor.func7
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/internal/delivery/grpc/server/middleware.go:23
+booking_service/genproto/booking_service._PatientsService_DeletePatient_Handler
+	/home/ali/Goland/Project/Dennic/Booking_service/Booking_service_evrone/genproto/booking_service/booking_service.pb.go:2808
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1369
+google.golang.org/grpc.(*Server).handleStream
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1780
+google.golang.org/grpc.(*Server).serveStreams.func2.1
+	/home/ali/go/pkg/mod/google.golang.org/grpc@v1.63.2/server.go:1019
+2024-04-24T09:59:47.957+0500	INFO	app/main.go:36	Conten service stops !

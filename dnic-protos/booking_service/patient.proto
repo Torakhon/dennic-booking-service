@@ -1,0 +1,90 @@
+syntax = "proto3";
+
+package booking_service;
+
+service PatientsService{
+  // Patient
+  rpc CreatePatient(CreatedPatient) returns (Patient);
+  rpc GetPatient(FieldValueReq) returns (Patient);
+  rpc GetAllPatiens(GetAllReq) returns (PatientsType);
+  rpc UpdatePatient(UpdatePatientReq) returns (Patient);
+  rpc UpdatePhonePatient(UpdatePhoneNumber)returns(StatusRes);
+  rpc DeletePatient(FieldValueReq) returns (StatusRes);
+}
+
+//
+
+message Patient{
+  string Id = 1;
+  string FirstName = 2;
+  string LastName = 3;
+  string BirthDate = 4;
+  string Gender = 5;
+  string Address = 6;
+  string BloodGroup = 7;
+  string PhoneNumber = 8;
+  string City = 9;
+  string Country = 10;
+  string PatientProblem = 11;
+  string CreatedAt = 12;
+  string UpdatedAt = 13;
+  string DeletedAt = 14;
+}
+
+message PatientsType{
+  int64 Count = 1;
+  repeated Patient Patients = 2;
+}
+
+message CreatedPatient{
+  string Id = 1;
+  string FirstName = 2;
+  string LastName = 3;
+  string BirthDate = 4;
+  string Gender = 5;
+  string Address = 6;
+  string BloodGroup = 7;
+  string PhoneNumber = 8;
+  string City = 9;
+  string Country = 10;
+  string PatientProblem = 11;
+}
+
+message UpdatePatientReq {
+  string Field = 1;
+  string Value = 2;
+  string FirstName = 3;
+  string LastName = 4;
+  string BirthDate = 5;
+  string Gender = 6;
+  string Address = 7;
+  string BloodGroup = 8;
+  string City = 9;
+  string Country = 10;
+  string PatientProblem = 11;
+}
+
+message UpdatePhoneNumber{
+  string Field = 1;
+  string Value = 2;
+  string PhoneNumber = 3;
+}
+
+message FieldValueReq {
+  string Field = 1;
+  string Value = 2;
+  bool DeleteStatus = 3;
+}
+
+message StatusRes {
+  bool Status = 1;
+}
+
+message GetAllReq {
+  string Field = 1;
+  string Value = 2;
+  bool DeleteStatus = 3;
+  uint64 Page = 4;
+  uint64 Limit = 5;
+  string OrderBy = 6;
+}
